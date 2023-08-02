@@ -118,23 +118,9 @@ nav img{
     }
 }
 
-.all-sections {
-  display: flex;
-}
 
-/* Titles and classes styling */
 
-h2 {
-  text-align: justify;
-  font-size: 50px;
-  text-align: center;
-  float: left;
-  color: #ffffff;
-  margin: 30px;
-  margin-left: 60px;
-  margin-top: 40px;
-  margin-bottom: 0px;
-}
+/* Random */
 
 .group_photo {
   width: fit-content;
@@ -144,55 +130,42 @@ h2 {
 }
 
 .videos {
-    align-self: left;
-}
-
-.all-sections-text {
-    color:#000000;
-    text-align: left;      
-}
-
-.all-sections-text h1{
-    color:#000000;
-    text-align: left;   
-    font-size:62px;   
-}
-
-.all-sections-text p{
-    margin: 10px 0 40px;
-    margin-bottom: 10px;
-    font-size: 14px;
-    color: #000000;
-}
-
-.all_blogs {
   display: flex;
   align-items: left;
+  align-self: auto;
   margin-left: 1in;
   flex-direction: row;
   flex-flow: wrap;
   padding: 20px;
 }
 
-.blog {
-  font-style: italic;
-  text-align: left;
-  width: 21.875rem;
-  padding: 1rem;
-  background-color: #fff;
-  border-radius: 11px;
-  box-shadow: 0 3px 10px var(--primary-shadow);
-  padding: 20px;
-  margin: 10px;
-  border:1px solid gray;
-  font-size: 18px;
-  height:150px
+
+
+
+/* All sections shit code thingy */
+.all-sections-text {
+    color:#000000;
+    text-align: left;      
 }
 
-.blog span {
-  color: #f44336;
-  font-size: 20px;
-  font-family: 'Times New Roman', Times, serif;
+.all-sections {
+  display: flex;
+}
+
+.all-sections-text h1{
+    color:#000000;
+    text-align: left;   
+    font-size:62px;   
+    margin-top: 10px;
+    margin-bottom: 10px;
+ 
+}
+
+.all-sections-text p{
+    margin-top:10px;
+    margin-bottom: 10px;
+    font-size: 14px;
+    color: #000000;  
 }
 
 .all-sections-text .contact_info {
@@ -208,3 +181,35 @@ h2 {
   margin-right: 10px;
   float:left;
 }
+
+/* blogs */
+
+.blogs-container {
+  margin-top: 30px;
+  margin-left: 60px;
+}
+
+.blogs-container hr {
+  border: 1px solid lightgray;
+  width: 75%;
+  margin-left: 5cm;
+}
+
+.blog-card {
+  margin: 0 15px 15px 30px;
+  padding-bottom: 5px;
+}
+
+.blog-card h3 {
+  font-size: 25px;
+  margin-left: 30px;
+}
+
+.blog-card li {
+  font-size: 20px;
+  margin-left: 30px;
+}
+
+
+
+
