@@ -1,51 +1,55 @@
 <!DOCTYPE html>
-    </head> <!-- Setup -->
-        <meta charset="UTF-8">
-        <title>Second Voice</title>
-        <link rel="stylesheet" href="./style.css"/>
-        <script src="./script.js"></script>   
-    </head>
-
-    <body>
-        <!-- Navigation Bar -->
-        <nav>
-            <div id="home">
-                <div class="name">
-                    Second Voice
-                    <div class="contact_info">
-                        <img src="images/envelope.png" alt="https://icons8.com/icon/124377/circled-envelope"/>
-                            secondvoiceoutreach@gmail.com
-                    </div>
-                    <div style="clear:both;"></div>
-                    <div class="contact_info">
-                    <img src="images/phone.png" alt="https://icons8.com/icon/124377/circled-envelope"/>
-                        +1 (425)-069-0420
-                    </div>
-                </div>
-            <div class="topdiv">
-                <a class="topmenu" href="#about-us">About Us</a>
-                <a class="topmenu" href="#socials">Socials</a>
-                <a class="topmenu" href="#funstuff">Fun Stuff!</a>
-            </div>
-
+<html>
+<head>
+    <meta name="viewport" content="with=device-width, initial-scale=1.0">
+    <title>Website</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.2.1/css/fontawesome.min.css">
+</head>
+<body>
+<section class="header">
+    <nav>
+        <a href="index.html"><img src="Images/logo.png"></a>
+        <div class="nav-links" id="navLinks">
+            <i class="fa fa-times" onclick="hideMenu()"></i>
+            <ul>
+                <li><a href="">HOME</a></li>
+                <li><a href="">ABOUT</a></li>
+                <li><a href="">VIDEOS</a></li>
+                <li><a href="">BLOG</a></li>
+                <li><a href="">CONTACT</a></li>
+            </ul>
         </div>
-        <nav>
+        <i class="fa fa-bars" onclick="showMenu"></i>
+    </nav>
 
-        <!-- About Us -->
-        <section id="about-us" class="container">
-            <div>
-                <img src="images/group_photo.jpg" class="profile_image"/>
-            </div>
-
-            <div>
-                <h1>
-                    Welcome to the Room of infinite BULLSHIT!<br/>
-                </h1>
-            <p>
-                Bullshit Adarsh will write <br/>
-            </p>
-      </div>
+<div class="text-box">
+    <h1>Amplifying Voices, One Story at a Time</h1>
+    <p>Uniting voices of organizations to create a symphony of inspiration.<br>Amplifying their impactful work and fostering a world where every effort for good is heard and celebrated."</p>
+    <a href="" class="hero-btn">Contact Us</a>
+    
+    
+</div>
+        
     </section>
-    </body>
-
+    
+<!--------JavaScript for Toggle Menu------->  
+<script>
+    var navLinks = document.getElementById("navLinks");
+    
+    function showMenu(){
+        navLinks.style.right = "0";
+    }
+    function showMenu(){
+        navLinks.style.right = "-200px";
+    }
+    
+</script>    
+    
+    
+</body>
 </html>
+

@@ -1,97 +1,132 @@
-body {
-  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins', sans-serif;
+    
+}
+.header{
+    min-height: 100vh;
+    width: 100%;
+    background-image: linear-gradient(rgba(4,9,30,0.7), rgba(4,9,30,0.7)),url(Images/banner.png);
+    background-position: center;    
+    background-size: cover;
+    position: relative;
+}
+nav{
+    display: flex;
+    padding: 2% 6%;
+    justify-content: space-between;
+    align-items: center;
+        
+}
+nav img{
+    width: 150px;
+}
+.nav-links{
+    flex: 1;
+    text-align: right;
+    
+}
+.nav-links ul li{
+    list-style:none;
+    display:inline-block;
+    padding: 8px 12px;
+    position: relative;
+    
 }
 
-/* Navigation Bar */
-
-#home {
-  background-color:  #ec7105;
-  padding-bottom: 1cm;
-  margin-left:-1cm;
-  margin-right:-1cm;
-  margin-top:-1cm;
-  padding-top: 2cm;
-  padding-bottom: 2cm;
-  height: 5mm;
- }
-
-.topmenu {
-  color: lightgray;
-  margin: 10px;
-  padding: 20px;
-  font-size: 20px;
-  text-decoration:none;
+.nav-links ul li a{
+    color: #fff;
+    text-decoration: none;
+    font-size: 13px;
+}
+.nav-links ul li::after{
+    content: '';
+    width:0%;
+    height:2px;
+    background:#f44336;
+    display: block;
+    margin: auto;
+    transition: 0.5s;
 }
 
-.topmenu:hover {
-  color: white;
-  font-weight: bolder;
-  text-decoration: underline;
-  /* Add the styles here */
+.nav-links ul li:hover::after{
+    width:100%;
+}
+.text-box{
+    widows: 90%;
+    color:#fff;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    text-align: center;
+        
+}
+.text-box h1{
+    font-size:62px;
+    
+}
+.text-box p{
+    margin: 10px 0 40px;
+    font-size: 14px;
+    color: #fff;
+}
+.hero-btn{
+    display: inline-block;
+    text-decoration: none;
+    color: #fff;
+    border: 1px solid #fff;
+    padding: 12px 34px;
+    font-size: 13px;
+    background: transparent;
+    position: relative;
+    cursor: pointer;
+    
+}
+.hero-btn:hover{
+    border: 1px solid #f44336;
+    background:#f44336;
+    transition: 1s;
+    
+    
 }
 
-.topdiv {
-  float: right;
-  padding-right: 1cm;
+nav .fa{
+    display: none;
 }
 
-.name {
-  float: left;
-  padding-left: 2cm;
-}
-
-.name .contact_info {
-  font-size: 15px;
-  font-style: italic;
-  display: flex;
-  align-items: center;
-  flex-direction: row;
-}
-
-.contact_info img 
-{
-  width:25px;
-  margin-right: 10px;
-  float:left;
-}
-
-/* Titles */
-
-h2 {
-  text-align: justify;
-  font-size: 50px;
-  text-align: center;
-  float: left;
-  color: #000000;
-  margin: 30px;
-  margin-left: 60px;
-  margin-top: 40px;
-  margin-bottom: 0px;
-}
-
-.container {
-  display: flex;
-}
-.about-us {
-  display: flex;
-  align-items: center;
-}
-
-#about-us h1 {
-  font-size: 65px;
-  margin-top: 90px;
-  color: #000000;
-}
-
-#about-us p {
-  font-size: 25px;
-  color: rgb(128, 128, 128);
-  margin-top: -1cm;
-}
-
-.profile_image {
-  width: 550px;
-  height: fit-content;
-  vertical-align: middle;
-  margin: 5px;
+@media(max-width: 700px){
+    .text-box h1{
+        font-size:20px;
+    }
+    .nav-links ul li{
+        display: block;
+        
+    }
+    .nav-links{
+        position: absolute;
+        background: #f44336;
+        height: 100vh;
+        width: 200px;
+        top: 0;
+        right: -200px;
+        text-align: left;
+        z-index: 2;
+        transition: 1s;
+        
+    }
+    nav .fa{
+        display: block;
+        color: #fff;
+        margin: 10px;
+        font-size: 22px;
+        cursor: pointer;
+        
+        
+    }
+    .nav-links ul{
+        padding: 30px;
+        
+    }
 }
